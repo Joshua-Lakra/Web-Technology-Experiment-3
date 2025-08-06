@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Update</title>
+</head>
+<style>
+    body {
+        background-color: rgba(7, 216, 7, 0.542);
+    }
+
+    .container {
+        margin: auto;
+        align-items: justify;
+        justify-content: center;
+    }
+
+    .Submit {
+        width: 150px;
+        height: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    .Name {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .mobile {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .email {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .country{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <h1 style="text-align:center;">User Profile</h1>
+    <h6 style="text-align:right"></h6>
+    <form action="“/serverlogic”" method="post">
+        <fieldset>
+
+            <div class="imgcontainer">
+                <img src="face.png" alt="Profile Photo Error..." height="200px" width="200px" style="float: right;">
+            </div>
+
+            <div class="Name">
+                <label for="fname" style="font-size:large;">First Name:</label>
+                <input type="text" id="fname" name="fname" style="font-size: large;" autofocus placeholder="John">
+
+                <label for="lname" style="font-size:large;">Last Name:</label>
+                <input type="text" id="lname" name="lname" style="font-size: large;" placeholder="Doe">
+            </div>
+
+            <div class="mobile">
+                <label for="mobile" style="font-size:large;">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" style="font-size: large;" placeholder="1234567890">
+
+            </div>
+
+            <div class="email">
+                <label for="email" style="font-size:large;">Email ID:</label>
+                <input type="text" id="email" name="email" style="font-size: large" placeholder="johndoe@gmail.com">
+            </div>
+
+            <div class="country">
+                <label for="country" style="font-size:large;">Country:</label>
+                <select name="Country" id="country">
+                    <option selected disabled>--Select Country--</option>
+                    <option value="India"></option>
+                    <option value="USSR"></option>
+                    <option value="USA"></option>
+                    <option value="Germany"></option>
+                    <option value="Japan"></option>
+                </select>
+            </div>
+
+            <label for="bday" style="font-size:large;">Birth Date:</label><br>
+            <input type="date" id="bday" name="bday" style="font-size: large">
+            <br><br>
+
+            <label for="website" style="font-size:large;">Website:</label><br>
+            <input type="url" id="website" name="website" style="font-size: large;" placeholder="www.johndoe.com">
+            <br><br>
+
+            <label for="banner" style="font-size:large;">Upload Banner:</label><br>
+            <input type="file">
+            <br><br>
+
+            <label for="about" style="font-size: large;">About Me:</label><br>
+            <textarea name="about" id="about"></textarea>
+            <br><br>
+
+            <label for="languages" style="font-size:large">Languages Spoken</label><br>
+            <input type="radio">English
+            <input type="radio">German
+            <input type="radio">Russian
+            <br><br>
+
+            <div class="Submit">
+                <input type="submit" value="soobmit">
+            </div>
+
+        </fieldset>
+
+
+
+    </form>
+</body>
+
+</html>
