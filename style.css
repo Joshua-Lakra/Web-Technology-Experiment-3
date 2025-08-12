@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .search-box {
+    display: flex;
+}
+
+header input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+header button {
+    padding: 8px 12px;
+    border: none;
+    background: #c19a6b;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+header button:hover {
+    background: #a37e4b;
+}
+
+/* Banner */
+.banner img {
+    height: 750px;
+    width: 2000px;
+    display: block;
+}
+
+/* Welcome Section */
+.welcome {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1;
+    min-width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover {
+    opacity: 0.85;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(26,26,26,0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Content Section */
+.content {
+    padding: 30px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-item img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+}
+
+.content-item .text {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #c19a6b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-item {
+        flex-direction: column;
+    }
+    .content-item.reverse {
+        flex-direction: column;
+    }
+    .content-item img, 
+    .content-item .text {
+        width: 100%;
+    }
+}
